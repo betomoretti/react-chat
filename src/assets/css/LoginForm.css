@@ -1,0 +1,14 @@
+.LoginForm {
+  width: 50%;
+  margin: 30px auto 0 auto;
+}
+
+.LoginForm label {
+  color: #E9E9E9;
+  font-size: 24px;
+}
+
+form > input {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
