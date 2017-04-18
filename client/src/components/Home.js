@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import LoginForm from './LoginForm';
-import '../assets/css/App.css';
+import '../assets/css/Home.css';
 
-class App extends Component {
+class Home extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="Home">
         <h1>React chat</h1>
         <LoginForm />
       </div>
@@ -13,4 +13,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Home;

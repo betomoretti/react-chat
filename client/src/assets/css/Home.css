@@ -4,14 +4,14 @@ body {
   background-color: #222930;
 }
 
-.App {
+.Home {
   text-align: center;
   width: 75%;
   height: 400px;
   margin: 0 auto 0 auto;
 }
 
-.App h1 {
+.Home h1 {
   padding-top: 50px;
   color: #4EB1BA;
   font-size: 75px;
