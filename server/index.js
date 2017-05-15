@@ -10,7 +10,7 @@ server.listen(port, function () {
 });
 
 // Routing
-app.use('/', express.static(`${__dirname}/../client/build`));
+app.use('/', express.static(`${__dirname}/../react-ui/build`));
 
 // Chatroom
 var numUsers = 0;
