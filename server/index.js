@@ -1,4 +1,5 @@
 // Setup basic express server
+let fs = require('fs');
 let express = require('express');
 let app = express();
 let server = require('http').createServer(app);
@@ -11,6 +12,16 @@ server.listen(port, function () {
 
 // Routing
 app.use('/', express.static(`${__dirname}/../react-ui/build`));
+
+
+app.get('/**', function(req, res) {
+  // res.sendFile('../react-ui/build/index.html', {root: __dirname })
+  fs.readFile(`${__dirname}/../react-ui/build/index.html`, 'utf8', function(err, text){
+    console.log(err)
+    res.send(text);
+  });
+});
+
 
 // Chatroom
 var numUsers = 0;
